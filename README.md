@@ -20,7 +20,7 @@ Because you want to know when your services are offline. So this is a must for a
 ## How do I get it?
 Watch this [tutorial on YouTube (german)](https://youtube.com/EasyTec100) or read the following guide.
 
-## The guide
+## The guide (step-by-step)
 1. Create an account [here](https://pipedream.com/auth/signup)
 2. Login and First Setup
 3. Go to `Projects` => `New project`
