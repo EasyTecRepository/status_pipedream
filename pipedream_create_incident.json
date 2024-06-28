@@ -1,0 +1,10 @@
+{
+    "incident": {
+        "name": "unknown fault",
+        "status": "investigating",
+        "impact_override": "minor",
+        "body": "{{steps.code.status_details}} - automatically generated message",
+        "components":{"{{steps.code.unreachable_sites_string}}"},
+        "component_ids": ["{{steps.code.unreachable_sites_raw}}"]
+    }
+}
