@@ -18,7 +18,7 @@ With pipedream.com you have the possibility to run scripts on an external server
 Because you want to know when your services are offline. So this is a must for anyone who has a few services to maintain.
 
 ## How do I get it?
-Watch this [tutorial on YouTube (german)](https://youtube.com/EasyTec100) or read the following guide.
+Watch this [tutorial on YouTube (german)](https://youtu.be/RjpxOH3OVNE) or read the following guide.
 
 ## The guide (step-by-step)
 1. Create an account [here](https://pipedream.com/auth/signup)
