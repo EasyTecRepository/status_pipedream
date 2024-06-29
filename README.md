@@ -30,11 +30,12 @@ Watch this [tutorial on YouTube (german)](https://youtube.com/EasyTec100) or rea
 7. Click `Add Trigger`
 8. Click `Custom Interval`
 9. Set `Every 150 Minutes`
-10. Click `Save and Continue`
-11. Click on `+`
-12. Search after `Python` => select `Run Python code`
-13. Paste [this Code](pipedream_code_block.py) into the Code section
-14. Adjust all variables
+10. Click `Generate Test Event`
+11. Click `Save and Continue`
+12. Click on `+`
+13. Search after `Python` => select `Run Python code`
+14. Paste [this Code](pipedream_code_block.py) into the Code section
+15. Adjust all variables
 
 | Quantity | Variable          | Explanation                   | Example                                                                     |
 | :------: | :---------------: | :---------------------------: | :-------------------------------------------------------------------------- |
@@ -45,19 +46,19 @@ Watch this [tutorial on YouTube (german)](https://youtube.com/EasyTec100) or rea
 | 1        | <page_id>         | PageID of your statuspage     | 12ab34cd56ef                                                                |
 | 1        | <api_key>         | API_Key from statuspage       | 123abc456def789ghi1011jkl1213mno                                            |
 
-15. Click `Test`
-16. Click `+` and select `Continue execution if a condition is met` (Actions -> Control Flow)
-17. Set `Initial Value` to `{{steps.code.continue_workflow}}`
-18. Set `Condition` to `Text Matches exactly (TEXT_EQUALS)`
-19. Set `Second value` to `true`
-20. By `Case sensitive` click on `CLEAR`
-21. Click `Test`
-22. Click `+`, click `HTTP / Webhook` and select `Send POST Request`
-23. Set `Request URL` to `https://api.statuspage.io/v1/pages/<your_page_id>/incidents/` (INSERT YOUR PAGE ID!!)
-24. Set `Authorization Type` to `Bearer Token` and insert your API Key from Statuspage
-25. Click on `Body`, select `application/json` for `Content-Type`
-26. Click in `Edit raw JSON` and insert [this JSON code](pipedream_create_incident.json)
-27. Click on `Deploy` (**Do not click `Test'** *because all your services are currently working, so your variables are empty. You would get errors! And of course, this workflow will stop before that*).
+16. Click `Test`
+17. Click `+` and select `Continue execution if a condition is met` (Actions -> Control Flow)
+18. Set `Initial Value` to `{{steps.code.continue_workflow}}`
+19. Set `Condition` to `Text Matches exactly (TEXT_EQUALS)`
+20. Set `Second value` to `true`
+21. By `Case sensitive` click on `CLEAR`
+22. Click `Test`
+23. Click `+`, click `HTTP / Webhook` and select `Send POST Request`
+24. Set `Request URL` to `https://api.statuspage.io/v1/pages/<your_page_id>/incidents/` (INSERT YOUR PAGE ID!!)
+25. Set `Authorization Type` to `Bearer Token` and insert your API Key from Statuspage
+26. Click on `Body`, select `application/json` for `Content-Type`
+27. Click in `Edit raw JSON` and insert [this JSON code](pipedream_create_incident.json)
+28. Click on `Deploy` (**Do not click `Test'** *because all your services are currently working, so your variables are empty. You would get errors! And of course, this workflow will stop before that*).
 
 The workflow should now be executed automatically every 150 minutes to check the status of your specified services to create an incident on the Statuspage if necessary.
 
