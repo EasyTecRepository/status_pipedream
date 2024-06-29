@@ -32,7 +32,7 @@ Watch this [tutorial on YouTube (german)](https://youtube.com/EasyTec100) or rea
 9. Set `Every 150 Minutes`
 10. Click `Save and Continue`
 11. Click on `+`
-12. Search after `Python` => select `Run Python code` (
+12. Search after `Python` => select `Run Python code`
 13. Paste [this Code](pipedream_code_block.py) into the Code section
 14. Adjust all variables
 
@@ -55,9 +55,10 @@ Watch this [tutorial on YouTube (german)](https://youtube.com/EasyTec100) or rea
 22. Click `+`, click `HTTP / Webhook` and select `Send POST Request`
 23. Set `Request URL` to `https://api.statuspage.io/v1/pages/<your_page_id>/incidents/` (INSERT YOUR PAGE ID!!)
 24. Set `Authorization Type` to `Bearer Token` and insert your API Key from Statuspage
-25. Click on `Body` and insert [this JSON code](pipedream_create_incident.json)
-26. Click on `Test`
-27. Click on `Deploy`
+25. Click on `Body`, select `application/json` for `Content-Type`
+26. Click in `Edit raw JSON` and insert [this JSON code](pipedream_create_incident.json)
+27. Click on `Deploy` (**Do not click `Test'** *because all your services are currently working, so your variables are empty. You would get errors! And of course, this workflow will stop before that*).
+
 The workflow should now be executed automatically every 150 minutes to check the status of your specified services to create an incident on the Statuspage if necessary.
 
 ## sources
